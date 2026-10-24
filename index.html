@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Torneo Gamer</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<header>
+  <h1>REGISTRO DE TORNEO GAMER</h1>
+</header>
+
+<nav>
+  <button onclick="mostrarSeccion('registro')">Registrar Torneo</button>
+  <button onclick="mostrarSeccion('torneos')">Torneos Registrados</button>
+  <button onclick="mostrarSeccion('contacto')">Contacto</button>
+</nav>
+
+<section id="registro" style="display:none;">
+
+  <h2>Registrar Torneo</h2>
+
+  <input
+    type="text"
+    id="nombreTorneo"
+    placeholder="Nombre del torneo">
+
+  <p id="errorNombre"></p>
+
+  <select id="categoriaTorneo">
+    <option value="">Seleccione categoría</option>
+    <option value="Lucha">Lucha</option>
+    <option value="Estrategia">Estrategia</option>
+    <option value="Arcade">Arcade</option>
+    <option value="Deportes">Deportes</option>
+    <option value="Aventura">Aventura</option>
+  </select>
+
+  <p id="errorCategoria"></p>
+
+  <input type="number" id="participantesTorneo" placeholder="Participantes" min="1" step="1">
+
+  <p id="errorParticipantes"></p>
+
+  <input type="number" id="valorInscripcion" placeholder="Valor inscripción" min="1" step="1">
+
+  <p id="errorValor"></p>
+
+  <input type="email" id="emailOrganizador" placeholder="Email organizador">
+
+  <p id="errorEmail"></p>
+
+  <button onclick="registrarTorneo()">
+    REGISTRAR TORNEO
+  </button>
+
+  <p id="mensajeExito"></p>
+
+</section>
+
+<section id="torneos" style="display:none;">
+
+  <h2>Torneos Registrados</h2>
+
+  <table border="1">
+
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Categoría</th>
+        <th>Participantes</th>
+        <th>Valor inscripción</th>
+        <th>Email</th>
+        <th>Recaudación estimada</th>
+      </tr>
+    </thead>
+
+    <tbody id="tablaTorneos">
+    </tbody>
+
+  </table>
+
+</section>
+
+<section id="contacto" style="display:none;">
+
+  <h2>Contacto</h2>
+
+  <p>Freddy Campuzano Telf:0962220123 </p>
+  <p>Correo: fcampuzanoc@gmail.com</p>
+
+</section>
+
+<script src="utilitarios.js"></script>
+<script src="dashboard.js"></script>
+
+</body>
+</html>

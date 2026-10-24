@@ -1,0 +1,167 @@
+
+/* DISEÑO GAMER */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #090e20, #1c1640);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #11172e;
+    color: #00e5ff;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 3px solid #6c3cff;
+}
+
+header h1 {
+    margin: 0;
+    text-shadow: 0 0 12px #00e5ff;
+}
+
+/* MENU */
+
+nav {
+    background-color: #171d38;
+    text-align: center;
+    padding: 15px;
+}
+
+nav button {
+    background-color: #352673;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #6c3cff;
+}
+
+/* SECCIONES */
+
+section {
+    width: 80%;
+    max-width: 900px;
+    margin: 25px auto;
+    background-color: #171d38;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #373269;
+    box-shadow: 0 5px 20px #00000055;
+}
+
+h2 {
+    color: #00e5ff;
+}
+
+/* CAMPOS DEL FORMULARIO */
+
+input,
+select {
+    background-color: #0d1328;
+    color: white;
+    border: 1px solid #444b70;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 7px 5px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #00e5ff;
+}
+
+/* BOTONES */
+
+button {
+    background-color: #6c3cff;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #00bcd4;
+    color: #071024;
+}
+
+/* TABLA DE PARTICIPANTES */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #353c60;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #352673;
+    color: #00e5ff;
+}
+
+td {
+    background-color: #10172e;
+    color: white;
+}
+
+tbody tr:hover td {
+    background-color: #29224c;
+}
+
+/* MENSAJES DE ERROR */
+
+#errorNombre,
+#errorCategoria,
+#errorParticipantes,
+#errorValor,
+#errorEmail {
+    color: #ff647c;
+    font-size: 14px;
+}
+
+/* MENSAJE DE EXITO */
+
+#mensajeExito {
+    color: #36f5ae;
+    font-weight: bold;
+}
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 600px) {
+    section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input,
+    select {
+        max-width: 90%;
+    }
+
+    th,
+    td {
+        padding: 6px;
+        font-size: 12px;
+    }
+}
