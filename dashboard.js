@@ -108,3 +108,21 @@ function registrarTorneo() {
   );
 
 }
+
+function mostrarTorneos() {
+
+  let contenido = "";
+
+  for (let i = 0; i < torneos.length; i++) {
+    contenido += "<tr>";
+    contenido += "<td>" + torneos[i].nombre + "</td>";
+    contenido += "<td>" + torneos[i].categoria + "</td>";
+    contenido += "<td>" + torneos[i].participantes + "</td>";
+    contenido += "<td>" + torneos[i].valorInscripcion + "</td>";
+    contenido += "<td>" + torneos[i].email + "</td>";
+    contenido += "<td>" + torneos[i].recaudacion + "</td>";
+    contenido += "</tr>";
+  }
+
+  document.getElementById("tablaTorneos").innerHTML = contenido;
+}
